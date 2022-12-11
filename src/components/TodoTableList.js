@@ -12,13 +12,6 @@ const TodoTableList = () => {
   return (
     <Grid>
       <TodoApp />
-      <Box display="flex" flexDirection="row">
-        <Box sx={{ pr: 3, border: 1, width: 20 }}>"#"</Box>
-        <Box sx={{ pr: 3, border: 1, width: 20 }}>User</Box>
-        <Box sx={{ pr: 3, border: 1, width: 300 }}>Description</Box>
-        <Box sx={{ pr: 3, border: 1, width: 50 }}>Completed</Box>
-      </Box>
-
       <div>
         {info.map((user) => {
           const { id, title, completed, userId } = user;
