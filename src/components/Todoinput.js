@@ -8,9 +8,9 @@ function TodoInput({ addTodo }) {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Agregar el todo
+        // Function for add Todo
         addTodo(text);
-        // Limpiar el input
+        // Cleaning de Input
         setText("");
     };
 

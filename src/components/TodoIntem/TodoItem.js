@@ -3,10 +3,11 @@ import { Box } from "@mui/material";
 import CheckIcon from "@mui/icons-material/Check";
 import CloseIcon from "@mui/icons-material/Close";
 
-const TodoItem = ({ text, completeTodo, index }) => {
+const TodoItem = ({ text, completeTodo }) => {
   const icontrue = <CheckIcon />;
   const iconfalse = <CloseIcon />;
   let newtask = !{ completeTodo };
+ 
 
   let maxNumber = 100;
   let randomId = Math.floor(Math.random() * maxNumber + 1);

@@ -6,6 +6,7 @@ import TodoList from "./TodoList";
 const TodoApp = () => {
   const [todoList, setTodoList] = useState([]);
 
+  // funtion to add new Todo
   const addTodo = (text) =>
     setTodoList([...todoList, { text, completed: false }]);
 

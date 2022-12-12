@@ -7,6 +7,7 @@ const TodoTable = ({ title, completed, id, userId }) => {
   const icontrue = <CheckIcon />;
   const iconfalse = <CloseIcon />;
 
+  //Using conditional for change background color
   return completed ? (
     <Grid>
       <Box sx={{ width: 497 }} display="flex" flexDirection="row">
@@ -27,8 +28,7 @@ const TodoTable = ({ title, completed, id, userId }) => {
         >
           {userId}
         </Box>
-        <Box  
-          sx={{ pr: 3, border: 1, width: 300 }}>{title}</Box>
+        <Box sx={{ pr: 3, border: 1, width: 300 }}>{title}</Box>
         <Box
           display="flex"
           flexDirection="row"

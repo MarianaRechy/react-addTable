@@ -11,18 +11,18 @@ const TodoList = ({ todoList, completeTodo }) => {
         <Box sx={{ pr: 3, border: 1, width: 300 }}>Description</Box>
         <Box sx={{ pr: 3, border: 1, width: 50 }}>Completed</Box>
       </Box>
-      <box>
+      <Box>
         {todoList.map((todo, index) => (
-          <box key={index}>
+          <Box key={index}>
             <TodoItem
               text={todo.text}
               completed={todo.completed}
               completeTodo={completeTodo}
               index={index}
             />
-          </box>
+          </Box>
         ))}
-      </box>
+      </Box>
     </Grid>
   );
 };
